@@ -1,0 +1,78 @@
+body{
+	
+	margin: 20px 20px 0 20px;
+}
+
+
+.main{
+	position: absolute;
+	min-width: 750px;
+	
+	padding: 20px;
+	
+	background-color: #eeeeee;
+	
+	border: 1px solid #999;
+}
+
+
+
+.left{
+	float: left;
+	width: 200px;
+	
+	padding: 20px;
+	
+	background-color: #ffffff;
+	
+	border: 1px solid #999;
+}
+
+.left span{
+	vertical-align: top;
+}
+
+
+.right{
+	float: right;
+	width: 120px;
+	
+	text-align: center;
+	
+	background-color: #ffffff;
+	
+	border: 1px solid #999;
+}
+
+.right img{
+	margin-bottom: 20px;
+}
+
+.right img:first-child{
+	margin-top: 20px;
+}
+
+
+
+.content{
+	
+	
+	min-width: 500px;
+	
+	margin: 0 140px 0 260px;
+	padding: 10px;
+	
+	background-color: #ffffff;
+	border: 1px solid #999;
+}
+
+
+
+
+.content p{
+	font-size: 15px;/*字体大小*/
+	line-height: 25px;/*字体行高*/
+	letter-spacing:2px;/*字体间距*/
+	text-indent: 2em;/*首段缩进2字符*/
+
+}
