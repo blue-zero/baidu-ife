@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏布局的实现</title>
+	<style>
+		*{
+			margin:0;
+		}
+		div{
+			border:1px solid black;
+			background-color: #eee;
+			padding:20px;
+			overflow: auto;
+		}
+		.leftDiv{
+			width:160px;
+			float:left;
+			background-color: white;
+			position: relative;
+		}
+		.rightDiv{
+			float:right;
+			width:80px;
+			background-color: white;
+		}
+		.teamName{
+			position: absolute;
+			right:20px;
+			top:20px;
+			font-weight:700;
+		}
+		.midDiv{
+			background-color: white;
+			margin:0 140px 0 220px;
+		}
+		.logo{
+			width: 40px;
+			height:40px;
+			margin-top: 20px;
+		}
+
+		p{
+			margin-top: 15px;
+		}
+		.rightDiv div:first-child,.leftDiv div:first-child{
+			margin-top: 0;
+		}
+		.midDiv p:first-child{
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="leftDiv">
+			<div class="logo top-logo">团队logo</div>
+			<span class="teamName">团队名称</span>
+		</div>
+		<div class="rightDiv">
+			<div class="logo top-logo">个人logo</div>
+			<div class="logo">个人logo</div>
+			<div class="logo">个人logo</div>
+			<div class="logo">个人logo</div>
+		</div>
+		<div class="midDiv">
+			<p>关于你们团队的介绍</p>
+			<p>可以给我们解释一下团队名称的来历，或是分别介绍你们的团队成员</p>
+			<p>（以下为实例）</p>
+			<p>百度WEB前端技术学院（Baidu Institute of ）</p>
+			<p>课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍。</p>
+			<p>太多了我随便复制了一点</p>
+		</div>
+	</div>
+
+</body>
+</html>
