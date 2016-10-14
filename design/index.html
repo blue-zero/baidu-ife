@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset = "UTF-8">	
+
+	<title>ife-demo</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/fontello.css">
+
+</head>
+<body>
+
+	<header> <h1>GTO Tools</h1>  </header>
+	
+	<button class="btn clear" id="clear">清除</button>
+	
+	<div class="content"><!--方便下边三个定位-->
+		<div class="list">
+			<ul class="list-wrap">
+				<li id="li"><!--<h2 class="lis-all"><i class="icon-folder-open"></i><span>所有任务</span>(0)</h2>--></li>
+				<li><h2><i class="icon-align-justify"></i>分类列表</h2>
+				
+					<ul class="list-item" id="list-item">
+						<!--
+						<li><h3><i class="icon-folder-open-empty"></i><span>默认分类</span>(0)</h3>
+
+							<ul class="item">
+								<li><h4><i class="icon-doc-text"></i><span>默认子分类</span>(0)</h4></li>
+
+							</ul>
+						</li>
+						-->
+					</ul>
+				-
+				</li>
+
+			</ul>
+			<div class="add" ><img src="images/add.png" width="40px" height="40px"></div>
+
+		</div><!--list-->
+		
+
+		<div class="type">
+			<div class="type-top" id="status">
+				<ul>
+					<li id="type-all" class="choose">所有</li>
+					<li id="type-unfinished"><i class="icon-meh"></i>未完成</li>
+					<li id="type-finished"><i class="icon-smile"></i>已完成</li>
+				</ul>
+			</div>
+			<div class="type-wrap">
+				<ul id="type-list">
+					<!--<li>
+						<h5>2016-06-01</h5>
+						<ul class="item">
+							<li><h6><span>task1</span><i class="delete  icon-minus-circled"></i> </h6></li>
+							<li class="type-finish"><h6><i class="icon-ok-squared"></i><span>task2</span></h6></li>
+						</ul>
+
+					</li>
+				-->
+				</ul>
+
+			</div>
+
+			<div class="add" id="addTask"><img src="images/add.png" width="40px" height="40px"></div>
+
+		</div><!--tupe-->
+		
+
+		<div class="cont">
+			<div class="cont-info">任务标题:<span id="disTitle">to-do-1</span>
+				<input class="cont-title" name="title" id="cont-title" placeholder="修改题目" />
+				<div class="set">
+					<i class="icon-ok"></i>
+					<i class="icon-edit"></i>
+				</div>
+			</div>
+
+			<div class="cont-info">任务日期:<span id="disDate">2015-04-30</span>
+
+				<input class="date " name="date" id="cont-date"  placeholder="输入日期（格式2016-01-01）">
+			</div>
+
+			<div class="cont-cont">
+				<span id="disContent">输入的内容</span>
+				<div id="cont-text">
+					<textarea class="text" name="content" placeholder="在此编辑内容"> </textarea>
+					<div id="saveOrCancel">
+						<button class="btn" id="cancel">放弃</button>
+						<button class="btn" id="save">保存</button>
+					</div>
+					
+				</div>	
+			</div>
+
+		</div>
+		
+		
+	
+	
+	<div id="add-window">
+		<div class="add-wrap">
+			<div class="add-wrap-title">新增分类</div>
+			<div class="add-wrap-content">
+				<span>选择分类：</span>
+				<select class="add-wrap-select" id="addCate"></select>
+				<br />
+				<span>新分类名称：</span>
+				<input class="add-wrap-text" type="text" id="add-new-textname" placeholder="请在此输入分类名称" />
+			</div>
+			<div class="add-wrap-footer">
+				<button id="yes">确认</button>
+				<button id="no">取消</button>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.0.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+</body>
+</html>
